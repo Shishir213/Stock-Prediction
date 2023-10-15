@@ -8,6 +8,9 @@ scipy
 pandas_datareader
 ##### Machine Learning packages
 scikit-learn
+yfinance
+streamlit
+sklearn
 
 ##### TensorFlow-related packages
 
