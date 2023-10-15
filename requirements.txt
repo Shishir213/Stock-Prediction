@@ -3,3 +3,6 @@ pandas
 Pillow
 matplotlib
 streamlit
+pandas_datareader
+yfinance
+keras
