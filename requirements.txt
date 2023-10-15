@@ -1,33 +1,15 @@
-
-##### Core scientific packages
 jupyter
 matplotlib
 numpy
 pandas
 scipy
 pandas_datareader
-##### Machine Learning packages
-scikit-learn
+keras
 yfinance
 streamlit
 sklearn
-
-##### TensorFlow-related packages
-
-# If you want to use a GPU, it must have CUDA Compute Capability 3.5 or
-# higher support, and you must install CUDA, cuDNN and more: see
-# tensorflow.org for the detailed installation instructions.
-
 tensorflow
-
-tensorboard
-
-##### Reinforcement Learning library (chapter 16)
-
 ##### Image manipulation
 Pillow
 pyglet
 scikit-image
-
-# Nice utility to diff Jupyter Notebooks.
-nbdime==2.1.1
