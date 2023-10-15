@@ -8,8 +8,8 @@ import streamlit as st
 
 
 yf.pdr_override()
-start = '2008-01-01'
-end = '2022-03-31'
+start = '2015-01-01'
+end = '2023-07-15'
 
 st.title('Stock Trend Prediction')
 user_input = st.text_input('Enter Stock Ticker', 'AAPL')
@@ -18,7 +18,7 @@ user_input = st.text_input('Enter Stock Ticker', 'AAPL')
 stock_data = pdr.get_data_yahoo(user_input, start, end)
 
 #Describing Data
-st.subheader('Data from 2008 - 2022')
+st.subheader('Data from 2015 - 2023')
 st.write(stock_data.describe())
 
 #Visualizations
