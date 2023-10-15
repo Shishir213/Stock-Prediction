@@ -7,7 +7,7 @@ pandas_datareader
 keras
 yfinance
 streamlit
-sklearn
+sklearn.preprocessing
 tensorflow
 ##### Image manipulation
 Pillow
