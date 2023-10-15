@@ -6,6 +6,7 @@ scipy
 pandas_datareader
 keras
 yfinance
+scikit-learn
 streamlit
 tensorflow
 Pillow
