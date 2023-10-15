@@ -5,6 +5,7 @@ pandas
 scipy
 pandas_datareader
 keras
+sklearn
 yfinance
 streamlit
 tensorflow
