@@ -7,7 +7,6 @@ from keras.models import load_model
 import streamlit as st
 
 
-
 yf.pdr_override()
 start = '2008-01-01'
 end = '2022-03-31'
@@ -29,15 +28,15 @@ plt.plot(stock_data.Close)
 st.pyplot(fig)
 
 st.subheader('Closing Price vs Time Chart with 100MA')
-ma100 = stock_data.Close.rolling(100).mean
+ma100 = stock_data.Close.rolling(100).mean()
 fig = plt.figure(figsize = (12, 6))
 plt.plot(stock_data.Close)
 plt.plot(ma100)
 st.pyplot(fig)
 
 st.subheader('Closing Price vs Time Chart with 100MA and 200MA')
-ma100 = stock_data.Close.rolling(100).mean
-ma200 = stock_data.Close.rolling(200).mean
+ma100 = stock_data.Close.rolling(100).mean()
+ma200 = stock_data.Close.rolling(200).mean()
 fig = plt.figure(figsize = (12, 6))
 plt.plot(stock_data.Close)
 plt.plot(ma100, 'r')
@@ -46,7 +45,6 @@ st.pyplot(fig)
 
 
 #Splitting data into Training and Testing
-
 
 
 #Creating Dataframe for Training and Testing
@@ -58,8 +56,6 @@ from sklearn.preprocessing import MinMaxScaler
 scaler = MinMaxScaler(feature_range=(0,1))
 
 data_training_array = scaler.fit_transform(data_training)
-
-
 
 
 
@@ -87,7 +83,6 @@ x_test, y_test = np.asarray(x_test), np.asarray(y_test)
 
 #Making Predictions
 y_predicted = model.predict(x_test)
-y_predicted.shape
 
 #Scaling up the values
 scaler = scaler.scale_
